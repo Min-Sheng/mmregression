@@ -5,7 +5,8 @@ from .builder import (DATASETS, PIPELINES, SAMPLERS, build_dataloader,
 from .cifar import CIFAR10, CIFAR100
 from .dataset_wrappers import (ClassBalancedDataset, ConcatDataset,
                                KFoldDataset, RepeatDataset)
-from .hema_auto import HemaAutoRegDataset
+from .hema_auto_cls import HemaAutoClsDataset
+from .hema_auto_reg import HemaAutoRegDataset
 from .imagenet import ImageNet
 from .imagenet21k import ImageNet21k
 from .mnist import MNIST, FashionMNIST
@@ -19,5 +20,5 @@ __all__ = [
     'DistributedSampler', 'ConcatDataset', 'RepeatDataset',
     'ClassBalancedDataset', 'DATASETS', 'PIPELINES', 'ImageNet21k', 'SAMPLERS',
     'build_sampler', 'RepeatAugSampler', 'KFoldDataset',
-    'HemaAutoRegDataset',
+    'HemaAutoClsDataset', 'HemaAutoRegDataset',
 ]
