@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from .cls_head import ClsHead
 from .conformer_head import ConformerHead
-from .conv_head import ConvRegHead
+from .conv_cls_head import ConvClsHead
+from .conv_reg_head import ConvRegHead
 from .deit_head import DeiTClsHead
 from .linear_head import LinearClsHead
 from .multi_label_head import MultiLabelClsHead
@@ -13,5 +14,5 @@ from .vision_transformer_head import VisionTransformerClsHead
 __all__ = [
     'ClsHead', 'RegHead', 'LinearClsHead', 'StackedLinearClsHead', 'MultiLabelClsHead',
     'MultiLabelLinearClsHead', 'VisionTransformerClsHead', 'DeiTClsHead',
-    'ConformerHead', 'ConvRegHead'
+    'ConformerHead', 'ConvClsHead', 'ConvRegHead'
 ]
